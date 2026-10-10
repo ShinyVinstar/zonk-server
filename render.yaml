@@ -1,0 +1,10 @@
+# Render Blueprint: один бесплатный веб-сервис
+services:
+  - type: web
+    name: zonk-vinstar
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: "echo no build"
+    startCommand: node index.js
+    healthCheckPath: /health
